@@ -21,7 +21,7 @@ function Display(props) {
         }
       </div>
       <br /><br /><br /><br /><br />
-      <button onClick={props.goBack} style={{marginLeft: 450}}> Go Back</button>
+      <button onClick={props.goBack} style={{marginLeft: 650}}> Go Back</button>
     </>
   );
 }
