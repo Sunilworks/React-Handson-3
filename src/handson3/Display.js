@@ -4,7 +4,7 @@ import "./Form.css";
 function Display(props) {
   return (
     <>
-      <h1 className="head">EMPLOYEE FEEDBACK FORM</h1>
+      <h1 className="head">EMPLOYEE FEEDBACK DATA</h1>
       <br />
       <br />
       <div className="dataBox">
