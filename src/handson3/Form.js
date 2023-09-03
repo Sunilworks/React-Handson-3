@@ -15,13 +15,15 @@ function Form() {
   const toGoBack = () => {
     setSubmitState(!SubmitState);
     
-  };console.log(SubmitState);
+  };
+  // console.log(SubmitState);
 
   const handleOnChange = (event) => {
     const { name, value } = event.target;
-    // console.log(name);
+    console.log(name);
     // console.log(value);
     setFstate({ ...Fstate, [name]: value });
+    console.log([name]);
   };
 
   const buttonFunc = (event) => {
