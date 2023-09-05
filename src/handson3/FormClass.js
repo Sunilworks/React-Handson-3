@@ -26,12 +26,20 @@ toogleFunction=()=>{
 }
   handleSubmit = (e) => {
     e.preventDefault();
-    const tempObj = {
-      name: this.state.Name,
-      department: this.state.Dept,
-      rating: this.state.Rat,
-    };
-    this.state.EmpData.push(tempObj);
+    if (this.state.Name.length === 0) {
+      alert("Invalid Form, Name can not be empty");
+    } else if (this.state.Dept.length === 0) {
+      alert("Invalid Form, Department can not be empty");
+    } else if (this.state.Rat.length > 5) {
+      alert("Invalid Form, Rating must be between 1 to 5.");
+    } else {
+      const tempObj = {
+        name: this.state.Name,
+        department: this.state.Dept,
+        rating: this.state.Rat,
+      };
+      this.state.EmpData.push(tempObj);
+    }
     this.setState({
       EmpData: this.state.EmpData,
       Name: "",
